@@ -3,5 +3,4 @@
 %h1= "my name is #{@name}" 
 
 - @posts.each do |t|
-	%h2= t.title
-	%p= t.body
+	%h2= link_to t.title, "/post/#{t.id}"
