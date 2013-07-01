@@ -14,6 +14,9 @@ AlexBlog::Application.routes.draw do
   #   resources :products
 get '/posts' => 'posts#index'
 get '/post/:id' => 'posts#show', as: 'post'
+get '/posts/new' => 'posts#new'
+post '/posts' => 'posts#create'
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
