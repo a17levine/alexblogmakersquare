@@ -16,6 +16,8 @@ get '/posts' => 'posts#index'
 get '/post/:id' => 'posts#show', as: 'post'
 get '/posts/new' => 'posts#new'
 post '/posts' => 'posts#create'
+get '/post/:id/edit' => 'posts#edit'
+put '/post/:id' => 'posts#update'
 
   # Sample resource route with options:
   #   resources :products do

@@ -5,3 +5,4 @@
 - @posts.each do |t|
 	/ %h2= link_to t.title, "/post/#{t.id}"
 	%h2= link_to t.title, post_path(t.id)
+	%p= link_to "edit post", "#{post_path(t)}/edit"
