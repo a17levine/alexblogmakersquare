@@ -1,3 +1,3 @@
 %h1= "#{@post.title}"
 %p= "#{@post.body}"
-%p= link_to 'Kill this post', delete_post_path(@post), :method => :delete, :data => {confirm: 'you sure?'}
+%p= link_to 'Kill this post', @post, :method => :delete, :data => {confirm: 'you sure?'}

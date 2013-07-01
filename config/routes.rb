@@ -18,7 +18,7 @@ get '/posts/new' => 'posts#new'
 post '/posts' => 'posts#create'
 get '/post/:id/edit' => 'posts#edit'
 put '/post/:id' => 'posts#update'
-delete '/post/:id' => 'posts#delete', as: 'delete_post'
+delete '/post/:id' => 'posts#delete'
 
   # Sample resource route with options:
   #   resources :products do
