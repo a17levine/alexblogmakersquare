@@ -1,2 +1,7 @@
 %h1 hello gents
 %p here's a paragraph
+%h1= "my name is #{@name}" 
+
+- @posts.each do |t|
+	%h2= t.title
+	%p= t.body
