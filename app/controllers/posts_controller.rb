@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 		if @post.save
 			redirect_to @post
 		else
-			render action: 'new'
+			render action: 'new', error: "No dice homie"
 		end
 	end
 
