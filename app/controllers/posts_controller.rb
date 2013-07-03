@@ -19,8 +19,14 @@ class PostsController < ApplicationController
 
 	def update
 		@post = Post.find(params[:id]) 
-		@post.update_attributes(params[:post])
-		redirect_to @post
+
+
+		if @post.update_attributes(params[:post])
+			@message = "this shiz worked"
+			render action: "show"
+		else
+			render action: 'edit'
+		end
 	end
 
 	def create

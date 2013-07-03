@@ -1,3 +1,5 @@
+= if @message.nil? then "" else @message end
+
 %h1= "#{@post.title}"
 %p= "#{@post.body}"
 %p= link_to 'Kill this post', @post, :method => :delete, :data => {confirm: 'you sure?'}
